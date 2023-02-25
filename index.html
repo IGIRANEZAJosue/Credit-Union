@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Landing Page</title>
+</head>
+<body>
+    
+    <nav>
+        <div class="nav-items" >
+            <div class="logo">
+                <h1>Landing<span>Page</span><b>.</b></h1>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#aboutUs">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+                <button>Sign Up</button>
+                <img id="dark-light" class="modes" src="./images/moon-solid 1.svg" alt="darkMode" >
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="hero">
+            <div class="left">
+                <h1>
+                    WELCOME TO <br> <span>IKIMINA</span> 
+                </h1>
+                <p>
+                    Empowering your financial well-being. Discover the credit union difference and experience personalized service, competitive rates, and community-focused banking
+                </p>
+                <button>Register
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                Join 1000+ credit unions using our services
+            </div>
+
+            <div class="right">
+                <img id="heroImage" src="./images/undraw_credit_card_payments_re_qboh (2).svg" alt="">
+                <div class="socials">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+    </section>
+
+    <section id="aboutUs" class="aboutUs">
+        <div class="container">
+            <h1>Who are we?</h1>
+            
+            <div class="content">
+                <div class="left">
+                    <img src="./images/creditUnion-removebg.png" alt="">
+                </div>
+
+                <div class="right">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam reprehenderit voluptatum minima necessitatibus facere impedit. Atque quibusdam, modi accusamus magnam porro sapiente eius quis. Harum, quia? Doloribus, fugiat sit! Labore?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores tempore earum sapiente. Beatae, laudantium perferendis! Autem alias error qui architecto, cum beatae officiis pariatur nesciunt fugiat, debitis, omnis minima enim.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum provident officiis architecto impedit expedita earum laborum totam modi? Temporibus quidem voluptatibus obcaecati magnam libero corrupti impedit veritatis illo optio! Incidunt.
+                    </p>
+                    <button>Learn More
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =========DARK MODE========== -->
+    <script>
+        let image = document.getElementById('heroImage');
+        let icon = document.getElementById("dark-light");
+        icon.onclick = function() {
+            document.body.classList.toggle( "dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = "./images/sun.png";
+                image.src = "./images/undraw_credit_card_darkMode.svg";
+            }
+            else {
+                icon.src = "./images/moon-solid 1.svg";
+                image.src = "./images/undraw_credit_card_payments_re_qboh (2).svg";
+            }
+        }
+    </script>
+
+</body>
+</html>
