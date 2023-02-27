@@ -84,8 +84,8 @@ nav {
 .nav-links button:hover{
     color: black;
     /* background-color: transparent; */
-    border: 2px solid var(--accent-color);
-    transform: translatey(-6px);
+    /* border: 2px solid var(--accent-color); */
+    transform: translateY(-0.4rem);
     transition: 0.3s ease-in;
     cursor: pointer;
 }
