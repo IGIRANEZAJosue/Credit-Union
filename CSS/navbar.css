@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root{
+    --purple1: #977af5;
+    --purple2: #9D81F5;
+    --accent-color: #00BFA6;
+    --text-color: #2F2E41;
+}
+ 
+
+nav {
+    margin-inline: 2em;
+    margin-block: 1rem;
+}
+
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    color: var(--text-color);
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logo span{
+    color: var(--accent-color);
+}
+
+.logo b{
+    font-weight: 800;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links ul {
+    display: flex;
+    margin-right: 1rem;
+}
+
+.nav-links ul li {
+    list-style: none;
+    margin-inline: 1rem;
+}
+
+.nav-links ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding-bottom: 4px;
+    transition: 0.3s ease-in;
+}
+
+
+.nav-links ul li a:hover {
+    color: rgb(77, 223, 223);
+    font-size: 17px;
+}
+
+
+.nav-links button {
+    padding: 6px 18px;
+    color: white;
+    background-color: var(--accent-color);
+    /* background: linear-gradient(76.8deg, rgb(121, 45, 129) 3.6%, rgb(36, 31, 98) 90.4%); */
+    border-radius: 8px;
+    border: 1px solid var(--accent-color);
+    transition: 0.3s ease-in;
+    outline: none;
+    
+}
+
+.nav-links button:hover{
+    color: black;
+    /* background-color: transparent; */
+    /* border: 2px solid var(--accent-color); */
+    transform: translateY(-0.4rem);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+.nav-links img {
+    margin-inline: 1rem;
+    width: 24px;
+    height: 24px;
+}

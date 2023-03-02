@@ -4,11 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./CSS/signup.css">
     
-    <title>Sign Up</title>
+    <title>Login</title>
     
 </head>
 <body>
+
+    <div class="container">
+        
+        <div class="box-container">
+            <div class="left">
+                <h1>Welcome Back!</h1>
+                <img src="./images/undraw_signup pic.svg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor in a et laudantium quia enim.</p>
+            </div>
     
+            <div class="right">
+                <h1>Login Account</h1>
+                <form action="">
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input type="email">
+                    </div>
+                    <div class="input-box">
+                        <label for="password">Password</label>
+                        <input type="password">
+                    </div>
+                    <div class="remember-pswd">
+                        <label for=""><input type="checkbox"> Keep me logged in</label>
+                        <a href="#">Fogot my password</a>
+                    </div>
+                    <input type="submit" value="Login" class="login-btn">
+                    
+                </form>
+
+                <button>
+                    <i class="fa-brands fa-google"></i>
+                    Login with Google
+                </button>
+
+                <p class="signup">
+                    Don't have an account? <a href="#">Sign Up</a> 
+                </p>
+                
+            </div>
+        </div>
+
+    </div>
+
 </body>
 </html>

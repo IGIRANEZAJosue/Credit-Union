@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/all.css">
+    <link rel="stylesheet" href="./CSS/dashboard.css">
+    
+    <title>Dashboard</title>
+
+</head>
+<body>
+    
+    <div class="container">
+        
+        <!-- ==============SIDEBAR=============== -->
+
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <h1>Landing<span>Page</span><b>.</b></h1>
+                </div>
+                <div class="close" id="close-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="#">
+                    <i class="fa-regular fa-objects-column"></i>
+                    <h3>Dashboard</h3>
+                </a>
+
+                <a href="#" class="active">
+                    <i class="fa-regular fa-people-group"></i>
+                    <h3>Members</h3>
+                </a>
+
+                <a href="#">
+                    <i class="fa-regular fa-coin"></i>
+                    <h3>Loans</h3>
+                </a>
+
+                <a href="#">
+                    <i class="fa-regular fa-chart-simple"></i>
+                    <h3>Analytics</h3>
+                </a>
+
+                <a href="#">
+                    <i class="fa-regular fa-message-lines"></i>
+                    <h3>Chat</h3>
+                    <span class="message-count">99+</span>
+                </a>
+                
+                <a href="#">
+                    <i class="fa-regular fa-diamond-exclamation"></i>
+                    <h3>Reports</h3>
+                </a>
+
+                <a href="#">
+                    <i class="fa-regular fa-gear"></i>
+                    <h3>Settings</h3>
+                </a>
+
+                <a href="#">
+                    <i class="fa-regular fa-right-from-bracket"></i>
+                    <h3>Logout</h3>
+                </a>
+        
+            </div>
+
+        </aside>
+
+        <!-- ==================================== -->
+
+        <!-- ==============MAIN=============== -->
+
+        <main>
+            <h1>Dashboard</h1>
+            
+            <div class="date">
+                <input type="date">
+            </div>
+
+            <div class="insights">
+                <div class="members">
+                    <i class="fa-regular fa-user-group"></i>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Members</h3>
+                            <h1>25,000</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" cr="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="muted-text">
+                        Last 30 days
+                    </small>
+                </div>
+
+                <div class="loans">
+                    <i class="fa-regular fa-chart-line"></i>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Loans</h3>
+                            <h1>$15,000</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" cr="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>44%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="muted-text">
+                        Last 24 hours
+                    </small>
+                </div>
+
+                <div class="interest">
+                    <i class="fa-regular fa-chart-bar"></i>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Interest</h3>
+                            <h1>$14,000</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" cr="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>61%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="muted-text">
+                        Last 24 hours
+                    </small>
+                </div>
+
+            </div>
+
+            <div class="recent-members">
+                <h2>Recent Members</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Member ID</th>
+                            <th>Payment</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HAKIZAMUNGU Joseph</td>
+                            <td>8665</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>NAHIMANA Rosette</td>
+                            <td>1225</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>MUNEZERO Anne Promesse</td>
+                            <td>2732</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>MUGISHA Joselyne</td>
+                            <td>23208</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#">Show All</a>
+            </div>
+
+        </main>
+
+        <!-- ==================================== -->
+
+        <!-- ===============RIGHT================= -->
+
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="theme-toggler">
+                    <i class="fa-solid fa-sun-bright active"></i>
+                    <i class="fa-solid fa-moon"></i>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>Joshua</b></p>
+                        <small class="muted-text">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="./images/Dashboard/profile-1.jpg">
+                    </div>
+                </div>
+            </div>
+
+            <div class="recent-updates">
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./images/Dashboard/profile-2.jpg">
+                        </div>
+                        <div class="message">
+                            <p><b>John Doe</b> requested a loan of $2000</p>
+                            <small class="muted-text">5 Minutes Ago</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./images/Dashboard/profile-3.jpg">
+                        </div>
+                        <div class="message">
+                            <p><b>John Doe</b> requested a loan of $2000</p>
+                            <small class="muted-text">5 Minutes Ago</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./images/Dashboard/profile-4.jpg">
+                        </div>
+                        <div class="message">
+                            <p><b>John Doe</b> requested a loan of $2000</p>
+                            <small class="muted-text">5 Minutes Ago</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="member-analytics">
+                <h2>Members Analytics</h2>
+
+                <div class="member online">
+                    <div class="icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>ONLINE MEMBERS</h3>
+                            <small class="muted-text">Last 24 Hours</small>
+                        </div>
+                        <h5 class="success">+25%</h5>
+                        <h3>3789</h3>
+                    </div>
+                </div>
+
+                <div class="member offline">
+                    <div class="icon">
+                        <i class="fa-solid fa-user-xmark"></i>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>OFFLINE MEMBERS</h3>
+                            <small class="muted-text">Last 24 Hours</small>    
+                        </div>
+                        <h5 class="danger">-15%</h5>
+                        <h3>589</h3>
+                    </div>
+                </div>
+
+                <div class="member new">
+                    <div class="icon">
+                        <i class="fa-solid fa-user-plus"></i>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>NEW MEMBERS</h3>
+                            <small class="muted-text">Last 24 Hours</small>                         
+                        </div>
+                        <h5 class="success">+5%</h5>
+                        <h3>89</h3>
+                    </div>
+                </div>
+
+                <div class="member add-member">
+                    <div>
+                        <i class="fa-solid fa-plus"></i>
+                        <h3>Add New Member</h3>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>   
+
+</body>
+</html>

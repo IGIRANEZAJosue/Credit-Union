@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+
+:root {
+    --black: #2f2e41;
+    --text-color: #2F2E41;
+    --accent-color: #00BFA6;
+    --bg-color: #fff;
+    --box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2); 
+    --card-border-radius: 15px;
+}
+
+
+div {
+    border: 1px solid #000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+span {
+    color: var(--accent-color);
+}
+
+.container {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    height: 100vh;
+}
+
+/* ====================SIDEBAR=================== */
+
+.sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.sidebar .top {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .top .close{
+    font-size: larger;
+    margin: auto;
+    display: none;
+}
+
+.sidebar .dashboard-items {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: -5rem;
+}
+
+.sidebar .dashboard-items a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    height: 3rem;
+
+}
+
+.sidebar .dashboard-items a h4 {
+    font-weight: 500;
+}
+
+.sidebar .logout {
+    margin-block: 2rem;
+}
+
+.sidebar .logout a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* ====================================================== */
+
+/* ======================MAIN===================== */
+
+.main {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.main .cards-section {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.main .request-viewLoan {
+    height: 80px;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+}
+.main .table {
+    max-height: 50%;
+}
+
+/* ====================================================== */
+
+/* ====================PROFILE SECTION=================== */
+
+.profile-section {
+    flex: 1.1;
+}
+
+
+
+/* ============================================= */
