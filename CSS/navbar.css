@@ -27,7 +27,7 @@ nav {
 }
 .logo{
     color: var(--text-color);
-    font-size: larger;
+    font-size: 24px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 

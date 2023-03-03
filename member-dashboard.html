@@ -26,7 +26,7 @@
 
             <div class="dashboard-items">
                 
-                <a href="#">
+                <a href="#" class="active">
                     <i class="fa-regular fa-objects-column"></i>
                     <h4>Dashboard</h4>
                 </a>
@@ -35,12 +35,16 @@
                     <h4>Payments</h4>
                 </a>
                 <a href="#">
-                    <i class="fa-regular fa-objects-column"></i>
+                    <i class="fa-regular fa-hand-holding-dollar"></i>
                     <h4>Loans</h4>
                 </a>
                 <a href="#">
                     <i class="fa-regular fa-message-captions"></i>
                     <h4>Inbox</h4>
+                </a>
+                <a href="#">
+                    <i class="fa-regular fa-user"></i>
+                    <h4>Profile</h4>
                 </a>
                 <a href="#">
                     <i class="fa-regular fa-gear"></i>
@@ -58,43 +62,114 @@
         
         <div class="main">
             
-            <h1>Dashboard</h1>
+            <h2>Dashboard</h2>
 
             <div class="cards-section">
                 
-                <div class="card">
-                    <h1>6000$</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, magnam!</p>
+                <div class="card" id="card1">
+                    <i class="fa-regular fa-circle-dollar-to-slot"></i>
+                    <h4>Total Contribution</h4>
+                    <h1>$6000</h1>
+                    <small>Last 30 days</small>
                 </div>
-                <div class="card">
-                    <h1>6000$</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, magnam!</p>
+                <div class="card" id="card2">
+                    <i class="fa-regular fa-chart-mixed"></i>
+                    <h4>Total Shares</h4>
+                    <h1>500</h1>
+                    <small>Last 30 days</small>
                 </div>
-                <div class="card">
-                    <h1>6000$</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, magnam!</p>
+                <div class="card" id="card3">
+                    <i class="fa-regular fa-hand-holding-dollar"></i>
+                    <h4>Total Loans</h4>
+                    <h1>$6000</h1>
+                    <small>Last 30 days</small>
                 </div>
                 
             </div>
 
             <div class="request-viewLoan">
                 <div class="request-loan">
-                    <h3>Request Loan</h3>
+                    <div class="left">
+                        <h4>Request Loan</h4>
+                        <small>You are eligible for a loan not more than $10000</small>
+                    </div>
+                    <i class="fa-solid fa-chevron-right"></i>
                 </div>
                 <div class="view-eligibility">
-                    <h3>View Loan Eligibility</h3>
+                    <div class="left">
+                        <h4>View Loan Eligibility</h4>
+                        <small>You are eligible for a loan not more than $10000</small>
+                    </div>
+                    <i class="fa-regular fa-chevron-right"></i>
                 </div>
             </div>
 
-            <h2>Recent Members</h2>
-            <div class="table">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea odio itaque, praesentium labore eius perspiciatis quis rem voluptatem quas ut quia maxime aspernatur? Odio voluptatibus obcaecati explicabo nobis minima ut?</p>
 
+            <div class="recent-members">
+                <h2>Recent Members</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Member ID</th>
+                            <th>Payment</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HAKIZAMUNGU Joseph</td>
+                            <td>8665</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>NAHIMANA Rosette</td>
+                            <td>1225</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>MUNEZERO Anne Promesse</td>
+                            <td>2732</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>MUGISHA Joselyne</td>
+                            <td>23208</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#">Show All</a>
             </div>
         </div>
 
         <div class="profile-section">
-            <h1>hello</h1>
+            <div class="top">
+                <div class="profile-header">
+                    <p>Hi, <b>Joseph</b> <br><small>Good Morning</small></p>
+                    <img src="./images/moon-solid 1.svg">
+                </div>
+                <div class="profile profile-photo">
+                    <img src="./images/Dashboard/profile-4.jpg">
+                    
+                </div>
+                <small>HAKIZAMUNGU Joseph</small>
+                <div class="profile-info">
+                    
+                </div>
+            </div>
+            <div class="bottom">
+                
+            </div>
         </div>
     </div>
 
